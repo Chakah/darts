@@ -97,7 +97,6 @@
 		text-align: center;
 		text-decoration: none;
 		padding: 0.5em 0.5em;
-		width: 5em;
 		margin: 0.5em 0.5em;
 	}
 	button:hover {
@@ -111,8 +110,8 @@
 		background-color: var(--secondary-color);
 	}
 	.span {
-		grid-column-start: span 2;
-		width: 11.2em;
+		grid-column: span 2;
+		/* width: 2fr; */
 	}
 	.throws {
 		display: flex;
@@ -150,7 +149,7 @@
 		margin-bottom: 2em;
 	}
 	.numbers {
-		grid-template-columns: repeat(10, 10%);
+		grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
 		display: grid;
 	}
 </style>
